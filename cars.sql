@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 25, 2019 at 05:54 PM
+-- Generation Time: Apr 26, 2019 at 08:56 AM
 -- Server version: 10.1.33-MariaDB
 -- PHP Version: 7.2.6
 
@@ -94,7 +94,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `user_fname`, `user_lname`, `user_phone`, `user_email`, `username`, `user_pass`) VALUES
-(7, 'user', 'user', '981818', 'user@gmail.com', 'user', 'user');
+(7, 'user', 'user', '981818', 'user@gmail.com', 'user', 'user'),
+(8, 'userOne', 'userOne', '9818', 'user1@gmail.com', 'userOne', '$2y$10$ac1czenAcJUKUNFFYAYbjuec9vYzz/MV/1H7ePKLQ/okAOtS3oXM6');
 
 --
 -- Indexes for dumped tables
@@ -140,19 +141,19 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `car2`
 --
 ALTER TABLE `car2`
-  MODIFY `car_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `car_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `service`
 --
 ALTER TABLE `service`
-  MODIFY `service_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `service_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `user_id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
